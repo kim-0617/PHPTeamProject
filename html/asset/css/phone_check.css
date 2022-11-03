@@ -1,0 +1,33 @@
+.login__inner.AuthPhone .btn3 {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 24px 11px;
+    font-size: 18px;
+    margin: 21px 0;
+    border-radius: 8px;
+}
+.login__inner.AuthPhone .btn3:hover {
+    background-color: #414ca9;
+    color: #fff;
+}
+.login__inner.AuthPhone input#PhoneCheckNumber {
+    width: 50%;
+    margin-right: 13px;
+}
+.login__inner.AuthPhone .timeLimit {
+    display: inline;
+    text-align: bottom;
+}
+.AuthPhone .userCheckNum {
+    display: inline;
+    margin-left: 10px;
+}
+.AuthPhone input::-webkit-outer-spin-button,
+.AuthPhone input::-webkit-inner-spin-button {
+    appearance: none;
+}
+.AuthPhone .otherAuthBtnE {
+    width: 100%;
+    margin-top: 5px !important;
+    padding: 17px 24px 16px !important;
+}

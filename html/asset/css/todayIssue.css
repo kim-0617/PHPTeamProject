@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: GmarketSans;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#todayIssue {
+    margin-left: 600px;
+    margin-top: 100px;
+    height: 900px;
+}
+
+#todayIssue > span {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+#todayIssue > h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 95px;
+    margin-top: 5px;
+}
+
+#todayIssue > h2 > em {
+    color: #668ef3;
+    font-style: normal;
+}
+
+.slider__img {
+    width: 548px;
+}
+
+.slider__inner {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 10000px;
+}
+
+.slider__inner.transition {
+    transition: all 300ms;
+}
+
+.slider {
+    position: relative;
+    margin-right: 40px;
+    background-color: #fff;
+    border-radius: 20px 20px 10px 10px;
+    margin-bottom: 115px;
+    opacity: 0.5;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #888;
+    width: 510px;
+}
+
+.slider.on {
+    opacity: 1;
+    box-shadow: 0px 0px 10px #686868;
+}
+
+.slider div[class^="rank"] {
+    width: 110px;
+    height: 130px;
+    position: absolute;
+    left: 0px;
+    top: -45px;
+    background: url("../img/rankicon.svg");
+}
+.slider div.rank01 {
+    transform: scale(1.2);
+}
+
+.slider .rank01 {
+    background-position: 0px 0;
+}
+
+.slider .rank02 {
+    background-position: -120px 0 !important;
+}
+
+.slider .rank03 {
+    background-position: -240px 0 !important;
+}
+
+.slider .rank04 {
+    background-position: -360px 0 !important;
+}
+
+.slider .rank05 {
+    background-position: -480px 0 !important;
+}
+
+.slider img {
+    width: 100%;
+    height: 420px;
+    display: block;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.slider .text {
+    width: 510px;
+    padding: 30px;
+    border-top: 1px solid #f5f5f5;
+}
+
+.slider .text .cate {
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.slider .text .title {
+    margin: 10px 0;
+    font-size: 28px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.slider .text .desc {
+    width: 450px;
+    height: 100px;
+    font-size: 18px;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.slider__btn .prev {
+    width: 70px;
+    height: 75px;
+    display: inline-block;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    background: url("../img/btn.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    filter: blur(5px);
+    opacity: 0.5;
+}
+
+.slider__btn .next {
+    width: 72px;
+    height: 78px;
+    display: inline-block;
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+    background: url("../img/btn.svg");
+    background-position: -70px 0;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    filter: blur(5px);
+    opacity: 0.5;
+}
+.slider__btn .next:hover,
+.slider__btn .prev:hover {
+    filter: blur(0px);
+    opacity: 1;
+    transition: filter 0.6s ease-out, opacity 0.4s ease-in;
+}
+
+.slider__btn.disable button {
+    pointer-events: none;
+}
+
+@media (max-width: 1220px) {
+    #todayIssue {
+        margin-left: 40px;
+    }
+    .slider__inner {
+        left: -1060px;
+    }
+}

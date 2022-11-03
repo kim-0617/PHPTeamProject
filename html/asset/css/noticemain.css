@@ -1,0 +1,174 @@
+#notice {
+    margin-bottom: 50px;
+}
+.notice_inner {
+    margin-top: 60px;
+    box-sizing: border-box;
+}
+.notice_inner .searchResult p {
+    display: block;
+    width: 100%;
+    background: #fff;
+    font-size: 18px;
+    color: #414ca9;
+    border-bottom: 1px solid #414ca9;
+    padding: 20px 40px 13px 40px;
+}
+
+.notice_inner h2 {
+    font-size: 30px;
+    font-weight: 700;
+    background: #fff;
+    border-bottom: 1px solid #414ca9;
+    padding: 20px 40px 13px 40px;
+}
+.notice_table table {
+    width: 100%;
+    border-spacing: 0;
+}
+.notice_table table tr {
+    height: 75px;
+    background: #fff;
+}
+.notice_table table tr:hover {
+    background: #eff6ff;
+}
+.notice_table table tr td {
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    padding: 0 30px;
+}
+.notice_table table tr td:first-child {
+    color: #666;
+    font-size: 16px;
+}
+.notice_table table tr td:nth-child(2) {
+    padding-left: 0;
+    color: black;
+}
+.notice_table table tr td a {
+    width: 100%;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+    /* display: block; */
+}
+.notice_table table tr td.bold a {
+    font-weight: bold;
+}
+.notice_table table tr td.bold a::before {
+    content: "√ 필독";
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    width: 73px;
+    /* height: 20px; */
+    color: white;
+    background: #668ef3;
+    text-align: center;
+    padding: 3px 15px 1px 13px;
+    border-radius: 5px;
+}
+.board__search {
+    margin: 30px auto;
+}
+.board__search input {
+    background: #fff;
+    width: 90%;
+    height: 50px;
+    /* display: block; */
+    /* margin: 0 auto; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #666;
+    text-align: center;
+}
+.board__search .searchBtn {
+    display: inline;
+    width: 50px;
+    height: 50px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23668EF3'/%3E%3Ccircle cx='23.8634' cy='23.8638' r='9.35556' stroke='white' stroke-width='2.105' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M30.2949 30.8313L36.1421 36.6786' stroke='white' stroke-width='2.105' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+    transform: translate(0, -5px);
+    cursor: pointer;
+}
+
+.board__pages {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+.board__pages ul {
+    display: flex;
+    /* margin: 0 auto; */
+}
+.board__pages ul li a {
+    padding: 11px 15px 8px 15px;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+}
+.board__pages ul li.active a {
+    background: #668ef3;
+    color: white;
+}
+
+@media (max-width: 1220px) {
+    /* .board__pages{
+        margin: 0;
+    } */
+}
+@media (max-width: 770px) {
+    .notice_inner h2 {
+        text-align: center;
+    }
+    .board__search input {
+        width: 85%;
+    }
+    .board__search .searchBtn {
+        width: 40px;
+        height: 40px;
+    }
+    .notice_table table tr td:first-child {
+        color: #666;
+        font-size: 12px;
+        word-break: keep-all;
+    }
+    .notice_table table tr td.bold a::before {
+        font-size: 12px;
+        top: 36%;
+        left: -147px;
+        right: auto;
+        width: 45px;
+    }
+    .board__pages ul li a {
+        font-size: 14px;
+        padding: 7px 10px 4px 10px;
+    }
+}
+@media (max-width: 468px) {
+    .notice_table table tr td:first-child {
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+    .notice_table table tr td {
+        padding: 0;
+    }
+    .board__search input {
+        width: 83%;
+    }
+    .board__search .searchBtn {
+        width: 38px;
+        height: 38px;
+    }
+    .board__pages {
+        margin: 0 auto;
+    }
+    .board__pages ul li:nth-child(4),
+    .board__pages ul li:nth-child(5),
+    .board__pages ul li:nth-child(6),
+    .board__pages ul li:nth-child(7) {
+        display: none;
+    }
+}

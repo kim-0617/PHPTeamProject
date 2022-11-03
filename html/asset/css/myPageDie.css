@@ -1,0 +1,130 @@
+.myPage {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 65px;
+    justify-content: center;
+}
+
+/* .subMenu */
+.subMenu {
+    width: 8%;
+    margin-left: 4%;
+}
+
+.subMenu hr {
+    margin-bottom: 30px;
+}
+
+.subMenu h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #666;
+}
+
+.subMenu nav ul li {
+    margin-bottom: 45px;
+}
+
+.subMenu nav ul li a {
+    font-size: 20px;
+    color: #666;
+}
+
+.subMenu nav ul li.active a {
+    color: #414ca9;
+    text-decoration: 7px underline #414CA94D;
+    text-underline-offset: 3px;
+}
+
+.subMenu nav ul li:hover a {
+    color: #414ca9;
+    text-decoration: 7px underline #414CA94D;
+    text-underline-offset: 3px;
+}
+
+#myPage__wrap {
+    width: 75%;
+    margin-bottom: 90px;
+}
+
+.myPage__tab {
+    border-bottom: 1px solid #000;
+    margin-bottom: 36px;
+}
+
+.myPage__tab__tit {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: 6px underline #668EF3;
+    text-underline-offset: 17px;
+}
+
+label {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+input {
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+button.quit {
+    display: inline-block;
+    padding: 8px 15px 5px 15px;
+    color: #fff;
+    background-color: #414ca9;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+@media (max-width: 770px) {
+    .subMenu {
+        width: 13%;
+    }
+
+    .subMenu h2 {
+        font-size: 24px;
+    }
+
+    .subMenu ul li a {
+        font-size: 20px !important;
+    }
+
+    .myPage__tab__tit {
+        font-size: 20px;
+        text-underline-offset: 13px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 468px) {
+    .subMenu h2 {
+        font-size: 18px;
+    }
+
+    .subMenu ul li a {
+        font-size: 16px !important;
+    }
+
+    .myPage {
+        padding-top: 50px;
+    }
+
+    .myPage__tab {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    myPage__tab__tit {
+        font-size: 18px !important;
+        width: 50%;
+        margin-right: 0;
+    }
+}

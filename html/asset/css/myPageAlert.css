@@ -1,0 +1,210 @@
+.myPage {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 65px;
+    justify-content: center;
+}
+
+/* .subMenu */
+.subMenu {
+    width: 8%;
+    margin-left: 4%;
+}
+
+.subMenu hr {
+    margin-bottom: 30px;
+}
+
+.subMenu h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #666;
+}
+
+.subMenu nav ul li {
+    margin-bottom: 45px;
+}
+
+.subMenu nav ul li a {
+    font-size: 20px;
+    color: #666;
+}
+
+.subMenu nav ul li.active a {
+    color: #414ca9;
+    text-decoration: 7px underline #414ca94d;
+    text-underline-offset: 3px;
+}
+
+.subMenu nav ul li:hover a {
+    color: #414ca9;
+    text-decoration: 7px underline #414ca94d;
+    text-underline-offset: 3px;
+}
+
+/* myPage__wrap */
+#myPage__wrap {
+    width: 75%;
+    margin-bottom: 90px;
+}
+
+.myPage__inner {
+    position: relative;
+    width: 90% !important;
+}
+
+.myPage__tab {
+    border-bottom: 1px solid #000;
+    margin-bottom: 36px;
+}
+
+.myPage__tab__tit {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: 6px underline #668ef3;
+    text-underline-offset: 17px;
+}
+
+.myPage__inner .myPageAlert {
+    /* height: 165px; */
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px 40px 45px 100px;
+    /* box-sizing: border-box; */
+    position: relative;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px #dbdbdb;
+}
+.myPage__inner .myPageAlert::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    background: #e0e0e0;
+    border-radius: 50%;
+}
+.myPage__inner .myPageAlert::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 90px;
+    left: 15px;
+    background: #e0e0e0;
+    border-radius: 50%;
+}
+
+.myPageAlert__title {
+    width: 60%;
+    font-size: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 40px;
+}
+.myPageAlert__title:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.myPageAlert__date {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    font-size: 18px;
+    color: #666;
+}
+
+.myPageAlert__delete__btn {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    color: #414ca9;
+    padding: 14px 36px 13px;
+    border-radius: 10px;
+    border: 1px solid #414ca9;
+    margin-bottom: 40px;
+    transition: all 0.2s;
+}
+.myPageAlert__delete__btn:hover {
+    color: #fff;
+    background: #414ca9;
+}
+
+@media (max-width: 770px) {
+    .subMenu {
+        width: 13%;
+    }
+    #myPage__wrap {
+        width: 75%;
+    }
+    .myPage__inner {
+        width: 95% !important;
+        padding: 0;
+        margin: 0 !important;
+    }
+    .subMenu h2 {
+        font-size: 24px;
+    }
+
+    .subMenu ul li a {
+        font-size: 20px !important;
+    }
+
+    .myPage__tab__tit {
+        font-size: 20px;
+        text-underline-offset: 13px;
+        margin-right: 15px;
+    }
+
+    .myPage__inner .myPageAlert {
+        padding-left: 95px;
+    }
+
+    .myPageAlert__title {
+        margin-bottom: 30px;
+    }
+    .myPageAlert__date {
+        font-size: 15px;
+        bottom: 5px;
+    }
+}
+
+@media (max-width: 468px) {
+    .subMenu h2 {
+        font-size: 18px;
+    }
+
+    .subMenu ul li a {
+        font-size: 16px !important;
+    }
+
+    .myPage {
+        padding-top: 50px;
+    }
+
+    .myPage__tab {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    myPage__tab__tit {
+        font-size: 18px !important;
+        width: 50%;
+        margin-right: 0;
+    }
+    .myPage__inner .myPageAlert {
+        padding-right: 8px;
+        padding-left: 57px;
+    }
+    .myPageAlert__date {
+        right: 20px;
+    }
+}

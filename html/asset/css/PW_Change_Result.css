@@ -1,0 +1,46 @@
+.login__inner.ChangePWResult .result__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login__inner.ChangePWResult .result__text .result {
+    font-size: 28px;
+    color: #666;
+    text-align: center;
+    line-height: 2;
+    padding: 40px 0 48px 0;
+    margin-bottom: 60px;
+} 
+
+.login__inner.ChangePWResult .login__result  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login__inner.ChangePWResult .login__result .login {
+    width: 48%;
+    height: 55px;
+    margin-right: 4%;
+    padding: 17px 50px 15px 50px;
+}
+
+.login__inner.ChangePWResult .login__result .home {
+    width: 48%;
+    height: 55px;
+    padding: 18px 15px 20px 15px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.login__inner.ChangePWResult .login__result .home a {
+    color: #414ca9;
+}
+
+@media (max-width:468px) {
+    .login__inner.ChangePWResult .login__result .login {
+        /* padding: 17px 50px 15px 50px; */
+        text-align: center;
+        padding: 0;
+        line-height: 55px;
+    }
+}

@@ -1,0 +1,289 @@
+.Privacy_title {
+    text-align: center;
+    margin-top: 160px;
+    margin-bottom: 80px;
+}
+.Privacy_title h2 {
+    display: inline;
+    font-family: 'NexonMaplestory';
+    color: 50px;
+    color: white;
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+}
+.Privacy_title h2::before{
+    content: '';
+    position: absolute;
+    left: -120px;
+    top: -50%;
+    width: 115px;
+    height: 110px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='115' height='111' viewBox='0 0 115 111' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M58.6191 3.28378C62.0303 1.25941 66.2747 1.25941 69.686 3.28378L102.316 22.6475C105.607 24.6008 107.625 28.1446 107.625 31.9719V71.221C107.625 75.0483 105.607 78.5921 102.316 80.5453L69.686 99.9091C66.2747 101.933 62.0303 101.933 58.6191 99.9091L25.9895 80.5453C22.6981 78.5921 20.6803 75.0483 20.6803 71.221V31.9719C20.6803 28.1446 22.6981 24.6008 25.9894 22.6475L58.6191 3.28378Z' fill='%23668EF3'/%3E%3Cpath d='M27.7459 56.634C28.1254 56.4085 28.5978 56.4085 28.9772 56.634L48.3185 68.1322C48.6837 68.3494 48.9076 68.7429 48.9076 69.1678V92.4317C48.9076 92.8567 48.6837 93.2502 48.3185 93.4673L28.9772 104.966C28.5978 105.191 28.1254 105.191 27.7459 104.966L8.40463 93.4673C8.03937 93.2502 7.81552 92.8567 7.81552 92.4317V69.1678C7.81552 68.7429 8.03937 68.3494 8.40463 68.1322L27.7459 56.634Z' stroke='white' stroke-width='8.03159'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+}
+
+/* PrivacyBox */
+.PrivacyBox {
+    background: #fff;
+    border: 2px solid #414ca9;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 50px;
+    height: 800px;
+    height: auto;
+}
+.PrivacyBox form fieldset>div,
+.PrivacyGroupInner>div>div {
+    margin-bottom: 45px;
+}
+.PrivacyBox form fieldset>div.PrivacyGroupInner{
+    margin-bottom: 0;
+}
+.PrivacyBox form fieldset>div label,
+.PrivacyGroupInner>div>div label {
+    font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.PrivacyBox form fieldset>div input,
+.PrivacyGroupInner>div>div input {
+    border-radius: 8px;
+}
+
+/* PrivacyGroupInner */
+.PrivacyGroupInner {
+    display: flex;
+    justify-content: space-between;
+}
+.PrivacyGroup1 {
+    width: 63%;
+}
+.PrivacyBox .PrivacyGroup1 > .ID{
+    display: flex;
+    flex-wrap: wrap;
+}
+.PrivacyBox .PrivacyGroup1 > .ID label {
+    width: 100%;
+}
+.PrivacyBox .PrivacyGroup1 > .ID input {
+    width: 76%;
+    margin-right: 1%;
+}
+.PrivacyGroup2 {
+    width: 30%;
+}
+.PrivacyGroup2 .PrivacyImgWrap {
+    position: relative;
+    height: 280px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+.PrivacyGroup2 .PrivacyImg {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+}
+
+
+.PrivacyGroup2 .PrivacyImg img {
+    width: 100%;
+    object-fit: cover;
+}
+.PrivacyGroup2 .PrivacyImg p {
+    text-align: center;
+    font-size: 1.2vw;
+    line-height: 1.4;
+    margin-top: 7vw;
+    color: #666;
+}
+.PrivacyGroup2 label.PrivacyImgLabel {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 1;
+    color: #999;
+    padding: 5px 12px 0;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid #999;
+    cursor: pointer;
+    position: absolute;
+    bottom: -10px;
+    right: 5px;
+}
+
+.PrivacyGroup2 input[type="file"]#youImg {  /* 파일 필드 숨기기 */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+}
+.PrivacyGroup2 select#youGender {
+    width: 100%;
+    height: 55px;
+    padding-left: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    background: #f5f5f5;
+}
+/* //PrivacyGroupInner */
+
+
+.PrivacyBox .PrivacyGroup1 > .ID .idCheck {
+    width: 23%;
+    text-align: center;
+    height: 55px;
+    line-height: 55px;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.PrivacyBox .PrivacyGroup1 > .ID p {
+    width: 100%;
+}
+
+
+.PrivacyBox form fieldset > .address{
+    display: flex;
+    flex-wrap: wrap;
+}
+.PrivacyBox form fieldset > .address label:first-child{
+    width: 100%;
+}
+.PrivacyBox form fieldset > .address #youAddress1{
+    width: 76%;
+    margin-right: 1%;
+    margin-bottom: 10px;
+}
+.PrivacyBox form fieldset > .address #youAddress2{
+    margin-bottom: 10px;
+}
+.PrivacyBox form fieldset > .address .addressCheck{
+    width: 23%;
+    text-align: center;
+    line-height: 57px;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 55px;
+}
+
+.PrivacyBox .join__btn {
+    margin: 0 auto;
+    display: block;
+    padding: 18px 50px;
+    border-radius: 50px;
+    border-width: 3px;
+    font-size: 26px;
+    margin-top: 70px;
+    background: #fff;
+    transition: all 0.3s;
+}
+
+.PrivacyBox .join__btn:hover {
+    background-color: #414ca9;
+    color: #fff;
+}
+
+.PrivacyBox .warning {
+    color: red;
+    font-size: 15px;
+    margin-top: 10px;
+    vertical-align: bottom;
+}
+
+@media (max-width: 1220px){
+    .PrivacyGroup2 .PrivacyImg {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width: 770px) {
+    .PrivacyBox .warning {
+       margin-top: 5px;
+       font-size: 13px;
+        display: block;
+    }
+    .PrivacyBox form fieldset > .address .addressCheck,
+    .PrivacyBox form fieldset > .ID .idCheck{
+        font-size: 15px;
+    }
+    .PrivacyGroup2 .PrivacyImg {
+        width: 120px;
+        height: 120px;
+    }
+    .PrivacyGroup2 .PrivacyImgWrap {
+        padding-top: 65px;
+    }
+    .PrivacyGroup2 label.PrivacyImgLabel{
+        bottom: 40px;
+    }
+    .PrivacyGroup2 label.PrivacyImgLabel{
+        font-size: 40px;
+    }
+}
+@media (max-width: 468px){
+    .PrivacyGroup2 .PrivacyImg {
+        width: 80px;
+        height: 80px;
+    }
+    .PrivacyBox form fieldset>div label {
+        font-size: 18px;
+    }
+    .PrivacyBox form fieldset > .ID{
+       display: block;
+    }
+    .PrivacyBox form fieldset > .ID input {
+        width: 100%;
+    }
+    .PrivacyBox form fieldset > .ID .idCheck {
+        float: right;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 5px;
+    }
+    .PrivacyBox .join__btn {
+        padding: 10px 40px;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    
+    .PrivacyBox form fieldset > .address{
+        display: block;
+    }
+    .PrivacyBox form fieldset > .address label:first-child{
+        width: 100%;
+    }
+    .PrivacyBox form fieldset > .address #youAddress1{
+        width: 100%;
+    }
+    .PrivacyBox form fieldset > .address #youAddress2{
+        margin-bottom: 10px;
+    }
+    .PrivacyBox form fieldset > .address .addressCheck{
+        float: right;
+        height: 30px;
+        line-height: 30px;
+        margin-top: -5px;
+        margin-bottom: 5px;
+    }
+    .PrivacyGroup2 .PrivacyImgWrap{
+        height: 260px;  
+    }
+    .PrivacyGroup2 label.PrivacyImgLabel{
+        font-size: 30px;
+        bottom: 85px;
+    }
+}
+

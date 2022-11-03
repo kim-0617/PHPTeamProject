@@ -1,0 +1,67 @@
+.Agree_more .AgreeBox {
+    /* height: auto; */
+}
+.Agree_more .AgreeBox div:first-child {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.Agree_more .AgreeBox div:first-child h3 {
+    font-size: 30px;
+    display: inline;
+    text-align: left;
+    /* margin-bottom: 21px; */
+    margin-left: 20px;
+}
+.Agree_more .AgreeBox > div > div{
+    display: flex;
+    align-items: flex-start;
+}
+.Agree_more .AgreeBox > div > div input {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.Agree_more .AgreeBox > div > div label {
+    font-size: 24px;
+}
+.Agree_more .AgreeBox .Agree_desc {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    background: #F3F3F3;
+    line-height: 1.7;
+    border-radius: 20px;
+    color: #444;
+}
+.Agree_more .agreeClose {
+    text-align: center;
+}
+.Agree_more .agreeClose .btn3 {
+    font-size: 26px;
+    padding: 18px 50px;
+    border-radius: 50px;
+    border: 3px solid #414ca9;
+
+}
+.Agree_more .Agree_desc{
+    height: 550px;
+    overflow-y: scroll;
+}
+.Agree_more .agreeClose .btn3:hover{
+    background: #414ca9;
+    color: white;
+    transition: all 0.3s;
+}
+
+@media (max-width:468px) {
+    .Agree_more .AgreeBox div:first-child h3 {
+        font-size: 25px;
+    }
+    .Agree_more .agreeClose .btn3 {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+}

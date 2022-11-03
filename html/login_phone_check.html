@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴대폰 인증</title>
+
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/phone_check.css">
+</head>
+<body>
+    <div id="login__wrap" class="login__phone__check open">
+        <section id="login__box">
+            <div class="login__inner">
+                <h2>휴대폰 인증</h2>
+                <form action="" method="post">
+                    <fieldset>
+                        <legend class="blind">휴대폰 번호 입력 폼</legend>
+                        <div>
+                            <label for="phoneNumber" class="blind">휴대폰</label>
+                            <input type="text" name="phoneNumber" id="phoneNumber" placeholder="휴대폰 번호" required>
+                        </div>
+                        <a href="#" class="btn3">인증번호 발송</a>
+                        <div>
+                            <label for="checkNumber" class="blind">인증번호</label>
+                            <input type="text" name="checkNumber" id="checkNumber" placeholder="인증번호" required>
+                            <p class="timeLimit">03:21</p>
+                        </div>
+                        <button type="submit" class="btn1">제출</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="login__close">
+                <span class="ir">닫기버튼입니다.</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/noticemain.css">
+</head>
+<body>
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="main.html"><span class="blind">메인페이지 이동</span></a>
+            </div>
+            <div class="middle">
+                <ul>
+                    <li><a href="Today_issue.html">오늘의 이슈</a></li>
+                    <li><a href="Tip_infor.html">꿀팁 저장소</a></li>
+                    <li><a href="QnA_page.html">QnA</a></li>
+                    <li><a href="Notice.html">공지사항</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#"><span class="blind">알림</span></a></li>
+                    <li><a href="board_write.html"><span class="blind">글쓰기</span></a></li>
+                    <li><a class="btn3" href="LoginForm.html">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="banner">
+            <div class="banner__inner">
+                <figure>
+                    <img src="./asset/img/bannerBee.png" alt="마스코트">
+                </figure>
+                <div class="banner__desc">
+                    <span class="sub__title">notice</span>
+                    <h2 class="main__title">공지사항</h2>
+                    <p class="banner__info">
+                        잡스비에서 알려드립니다.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+        <!-- //banner -->
+
+        <section id="notice" class="container">
+            <div class="notice_inner">
+                <h2>공지사항</h2>
+                
+                <div class="notice_table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 23%">
+                            <col style="width: 77%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>2019-02-04</td>
+                                <td class="bold"><a href="noticeView.html">[공지] 잡스비 질문자 패널티 정책</a></td>
+                            </tr>
+                            <tr>
+                                <td>2019-02-04</td>
+                                <td class="bold"><a href="noticeView.html">[공지] 잡스비 질문자 패널티 정책</a></td>
+                            </tr>
+                            <tr>
+                                <td>2019-02-04</td>
+                                <td class="bold"><a href="noticeView.html">[공지] 잡스비 질문자 패널티 정책</a></td>
+                            </tr>
+                            <tr>
+                                <td>2019-02-04</td>
+                                <td><a href="noticeView.html">[공지] 잡스비 휴가 날짜</a></td>
+                            </tr>
+                            <tr>
+                                <td>2019-02-04</td>
+                                <td><a href="noticeView.html">[공지] 잡스비 사용자 설문조사</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="board__search">
+                    <div class="noticeSearch">
+                        <form action="" name="noticeSearch" method="get">
+                            <fieldset>
+                                <legend class="blind">공지사항 검색 영역</legend>
+                                <input type="search" name="searchKeyword" id="searchKeyword" placeholder="검색어를 입력하세요" aria-label="search" required>
+                                <button type="submit" class="searchBtn"><span class="blind">검색</span></button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="board__pages">
+                    <ul>
+                        <li><a href="#">처음으로</a></li>
+                        <li><a href="#">이전</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">다음</a></li>
+                        <li><a href="#">마지막으로</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- //board -->
+
+
+    </main>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보 수정</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/privacy.css">
+</head>
+
+<body class="waveBg">
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="main.html"><span class="blind">메인페이지 이동</span></a>
+            </div>
+            <div class="middle">
+                <ul>
+                    <li><a href="Today_issue.html">오늘의 이슈</a></li>
+                    <li><a href="Tip_infor.html">꿀팁 저장소</a></li>
+                    <li><a href="QnA_page.html">QnA</a></li>
+                    <li><a href="Notice.html">공지사항</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#"><span class="blind">알림</span></a></li>
+                    <li><a href="board_write.html"><span class="blind">글쓰기</span></a></li>
+                    <li><a class="btn3" href="LoginForm.html">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section class="container">
+            <div class="Agree_title">
+                <h2>개인정보 수정</h2>
+            </div>
+            <!-- // title -->
+
+            <div class="PrivacyBox">
+                <form action="" method="post" onsubmit="return joinChecks();">
+                    <fieldset>
+                        <legend class="blind">개인정보 수정 폼</legend>
+                        <div class="PrivacyGroupInner">
+                            <div class="PrivacyGroup1">
+                                <div>
+                                    <label for="youName">이름</label>
+                                    <input type="text" name="youName" id="youName" required>
+                                    <p class="warning" id="youNameComment"></p>
+                                </div>
+                                <div>
+                                    <label for="youBirth">생년월일</label>
+                                    <input type="date" name="youBirth" id="youBirth" required>
+                                    <p class="warning" id="youBirthComment"></p>
+                                </div>
+                                <div class="clearfix ID">
+                                    <label for="youID">아이디</label>
+                                    <input type="text" name="youID" id="youID" required>
+                                    <div class="idCheck btn1">중복확인</div>
+                                    <p class="warning" id="youIDComment"></p>
+                                </div>
+                            </div>
+                            <div class="PrivacyGroup2">
+                                <div class="PrivacyImgWrap">
+                                    <div class="PrivacyImg">
+                                        <!-- <img src="asset/img/ad01.jpg" alt="프로필 이미지"> -->
+                                        <p>이미지를<br>등록해 주세요</p>
+                                    </div>
+                                    <label for="youImg" class="PrivacyImgLabel">+<div class="blind">프로필 이미지</div></label>
+                                    <input type="file" name="youImg" id="youImg" accept=".jpg, .jepg, .png" placeholder="이미지를 등록해 주세요.">
+                                </div>
+                                <div>
+                                    <label for="youGender">성별</label>
+                                    <select name="youGender" id="youGender">
+                                        <option value="m">남성</option>
+                                        <option value="f">여성</option>
+                                        <option value="i">감성</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="youPass">비밀번호</label>
+                            <input type="password" name="youPass" id="youPass" required>
+                            <p class="warning" id="youPassComment"></p>
+                        </div>
+
+                        <div>
+                            <label for="youPassC">비밀번호 확인</label>
+                            <input type="password" name="youPassC" id="youPassC" required>
+                            <p class="warning" id="youPassCComment"></p>
+                        </div>
+
+                        <div class="clearfix address">
+                            <label for="youAddress1">주소</label>
+                            <input type="text" name="youAddress1" id="youAddress1" placeholder="우편번호" required>
+                            <div class="addressCheck btn1">주소 찾기</div>
+                            <label for="youAddress2" class="blind">주소</label>
+                            <input type="text" name="youAddress2" id="youAddress2" placeholder="주소" required>
+                            <label for="youAddress3" class="blind">주소</label>
+                            <input type="text" name="youAddress3" id="youAddress3" placeholder="상세주소" required>
+                            <p class="warning" id="youAddressComment">dddd</p>
+                        </div>
+
+                        <div>
+                            <label for="youPhone">연락처</label>
+                            <input type="text" name="youPhone" id="youPhone" required>
+                            <p class="warning" id="youPhoneComment"></p>
+                        </div>
+
+                        <div>
+                            <label for="youEmail">이메일</label>
+                            <input type="email" name="youEmail" id="youEmail" required>
+                            <p class="warning" id="youEmailComment"></p>
+                        </div>
+
+                        <button type="submit" class="join__btn btn3">수정하기</button>
+                    </fieldset>
+                </form>
+            </div>
+            <!-- // box -->
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let idCheck = true;
+
+        function idChecking() {
+            let youID = $('#youID').val();
+            if (youID === '') {
+                $('#youIDComment').text('아이디를 입력해 주세요!!');
+            }
+            else {
+                $.ajax({
+                    type: "POST",
+                    url: "joinCheck.php",
+                    data: { "youID": youID, "type": "idCheck" },
+                    dataType: "json",
+                    success: function (data) {
+                        if (data.result === "good") {
+                            $('#youIDComment').text('사용 가능한 아이디 입니다!!');
+                            idCheck = true;
+                        }
+                        else {
+                            $('#youIDComment').text('이미 존재하는 아이디 입니다.');
+                            idCheck = false;
+                        }
+                    },
+                    error: function (request, status, error) {
+                        console.log("request", request);
+                        console.log("status", status);
+                        console.log("error", error);
+                    }
+                });
+            }
+        }
+
+        function joinChecks() {
+            // 이름 공백 확인
+            if ($('#youName').val() === '') {
+                $('#youNameComment').text("이름을 입력해 주세요!");
+                return false;
+            }
+
+            // 이름 유효성 검사
+            const getYouName = new RegExp(/^[가-힣]+$/);
+            if (!getYouName.test($('#youName').val())) {
+                $("#youNameComment").text("이름의 형식이 올바르지 않습니다.");
+                $("#youNameComment").val("");
+                return false;
+            }
+
+            // 생년월일 공백 확인
+            if ($('#youBirth').val() === '') {
+                $('#youBirthComment').text("생년월일(YYYY-MM-DD)을 입력해 주세요!");
+                return false;
+            }
+
+            // 생년월일 유효성 검사
+            const getYouBirth = new RegExp(/^(19[0-9][0-9]|20\d{2})-(0[0-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/);
+            if (!getYouBirth.test($("#youBirth").val())) {
+                $("#youBirthComment").text("생년월일이 정확하지 않습니다. 올바른 생년월일(YYYY-MM-DD)을 적어주세요!");
+                return false;
+            }
+
+            // 아이디 공백 검사
+            if ($('#youID').val() === '') {
+                $('#youIDComment').text("아이디를 입력해 주세요!");
+                return false;
+            }
+
+            // 아이디 유효성 검사
+            const getYouID = $('#youID').val();
+            if (getYouID.length < 4 || getYouID.length > 20) {
+                $('#youIDComment').text("4자리~ 20자리 이내로 입력해주세요!");
+                return false;
+            }
+            else if (getYouID.search(/[\s]/) !== -1) {
+                $('#youIDComment').text("아이디는 공백없이 입력해 주세요!");
+                return false;
+            }
+
+            // 아이디 중복 검사
+            if (!idCheck) {
+                $("#youIDComment").text("아이디 중복 검사를 해주세요!");
+                return false;
+            }
+
+            // 비밀번호 공백 검사
+            if ($('#youPass').val() === '') {
+                $('#youPassComment').text("비밀번호를 입력해 주세요!");
+                return false;
+            }
+
+            // 비밀번호 유효성 검사
+            const getYouPass = $('#youPass').val();
+            const getYouPassNum = getYouPass.search(/[0-9]/g);
+            const getYouPassEng = getYouPass.search(/[a-z]/gi);
+            const getYouPassSpe = getYouPass.search(/[`~!@@#$%^&*|₩₩₩'₩";:₩/?]/gi);
+
+            if (getYouPass.length < 8 || getYouPass.length > 20) {
+                $('#youPassComment').text("8자리~ 20자리 이내로 입력해주세요!");
+                return false;
+            }
+            else if (getYouPass.search(/[\s]/) !== -1) {
+                $('#youPassComment').text("비밀번호는 공백없이 입력해 주세요!");
+                return false;
+            }
+            else if (getYouPassNum < 0 || getYouPassEng < 0 || getYouPassSpe < 0) {
+                $('#youPassComment').text("영문, 숫자, 특수 문자를 혼합하여 입력해 주세요!");
+                return false;
+            }
+
+            // 확인 비밀번호 공백 검사
+            if ($('#youPassC').val() === '') {
+                $('#youPassCComment').text("확인 비밀번호를 입력해 주세요");
+                return false;
+            }
+
+            // 비밀번호가 동일한지 체크
+            if ($('#youPass').val() !== $('#youPassC').val()) {
+                $('#youPassCComment').text("비밀번호가 동일하지 않습니다.");
+                return false;
+            }
+
+            // 주소 공백 체크
+            if ($('#youAddress1').val() === '' || $('#youAddress2').val() === '' || $('#youAddress3').val() === '') {
+                $('#youAddressComment').text("주소를 입력해주세요");
+                return false;
+            }
+
+            // 휴대폰 번호 공백 확인
+            if ($('#youPhone').val() === '') {
+                $('#youPhoneComment').text("휴대폰번호(010-0000-0000)를 입력해 주세요!");
+                return false;
+            }
+
+            // 휴대폰 번호 유효성 검사
+            const getYouPhone = RegExp(/01[016789]-[^0][0-9]{2,3}-[0-9]{3,4}/);
+            if (!getYouPhone.test($("#youPhone").val())) {
+                $("#youPhoneComment").text("휴대폰 번호가 정확하지 않습니다. 올바른 휴대폰번호(000-0000-0000)를 입력해주세요!");
+                $("#youPhone").val("");
+                return false;
+            }
+
+            // 이메일 공백 검사
+            if ($('#youEmail').val() === '') {
+                $("#youEmailComment").text("이메일을 입력해 주세요!");
+                return false;
+            }
+
+            // 이메일 유효성 검사
+            const getYouEmail = new RegExp(/^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/);
+            if (!getYouEmail.test($('#youEmail').val())) {
+                $("#youEmailComment").text("이메일을 형식에 맞게 입력해 주세요!");
+                $("#youEmailComment").val("");
+                return false;
+            }
+
+            // 이메일 중복 검사
+            if (!emailCheck) {
+                $("#youEmailComment").text("이메일을 중복 검사를 해주세요!");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

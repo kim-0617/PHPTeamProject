@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1:1 문의하기</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body>
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="main.html"><span class="blind">메인페이지 이동</span></a>
+            </div>
+            <div class="middle">
+                <ul>
+                    <li><a href="Today_issue.html">오늘의 이슈</a></li>
+                    <li><a href="Tip_infor.html">꿀팁 저장소</a></li>
+                    <li><a href="QnA_page.html">QnA</a></li>
+                    <li><a href="Notice.html">공지사항</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#"><span class="blind">알림</span></a></li>
+                    <li><a href="board_write.html"><span class="blind">글쓰기</span></a></li>
+                    <li><a class="btn3" href="LoginForm.html">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="boardWrite" class="container">
+            <h2>1:1 문의하기</h2>
+            <div class="boardWrite_Wrap">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend class="blind">문의 유형 선택하기</legend>
+                        <div>
+                            <select name="searchOption" id="searchOption">
+                                <option value="이용문의">이용 문의</option>
+                                <option value="계정">계정</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="inquiryWirte">제목</label>
+                            <input type="text" name="inquiryWirte" id="inquiryWirte" placeholder="제목을 입력하세요" required>
+                        </div>
+                        <div>
+                            <label for="inquiryDesc">본문</label>
+                            <textarea name="inquiryDesc" id="inquiryDesc"></textarea>
+                        </div>
+                        <div class="TagWrap">
+                            <label for="inquiryattach" class="blind">파일첨부</label>
+                            <input class="inquiryInput" type="file" name="myfile">
+                            <!-- <input class="boardWriteTag" type="text" name="boardWriteTag" id="boardWriteTag" placeholder="#태그 (#으로 구분해주세요)" required> -->
+                        </div>
+                        <div class="Writebtn">
+                            <button type="submit" class="btn1">작성</button>
+                            <a href="#" class="btn2">취소</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

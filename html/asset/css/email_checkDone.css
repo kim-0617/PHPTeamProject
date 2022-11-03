@@ -1,0 +1,25 @@
+.AuthEmailResult.checkDesc {
+    font-size: 28px;
+    line-height: 2;
+    text-align: center;
+    color: #666;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.AuthEmailResult .btn1 {
+    display: inline-block;
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+}
+
+.AuthEmailResult .checkDesc {
+    font-size: 28px;
+    line-height: 2;
+    text-align: center;
+    color: #666;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}

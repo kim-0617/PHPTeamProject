@@ -1,0 +1,59 @@
+.login__inner.SearchPWResult .result__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__inner.SearchPWResult .result__text .result {
+    font-size: 21px;
+    color: #666;
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+
+.login__inner.SearchPWResult .result__text .result span {
+    font-size: 28px;
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    padding: 40px 0;
+    display: inline-block;
+}
+
+.login__inner.SearchPWResult .login__result {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login__inner.SearchPWResult .login__result .join {
+    width: 48%;
+    height: 55px;
+    margin-right: 4%;
+    padding: 17px 50px 15px 50px;
+}
+
+.login__inner.SearchPWResult .login__result .findPW {
+    width: 48%;
+    height: 55px;
+    padding: 18px 15px 20px 15px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.login__inner.SearchPWResult .login__result .resetPW {
+    width: 48%;
+    height: 55px;
+    padding: 5px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 50px;
+}
+
+@media (max-width:468px) {
+    .login__inner.SearchPWResult .login__result .join {
+        /* padding: 17px 50px 15px 50px; */
+        text-align: center;
+        padding: 0;
+        line-height: 55px;
+    }
+}

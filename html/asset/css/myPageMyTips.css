@@ -1,0 +1,337 @@
+.myPage {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 65px;
+    justify-content: center;
+}
+
+/* .subMenu */
+.subMenu {
+    width: 8%;
+    margin-left: 4%;
+}
+
+.subMenu hr {
+    margin-bottom: 30px;
+}
+
+.subMenu h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #666;
+}
+
+.subMenu nav ul li {
+    margin-bottom: 45px;
+}
+
+.subMenu nav ul li a {
+    font-size: 20px;
+    color: #666;
+}
+
+.subMenu nav ul li.active a {
+    color: #414ca9;
+    text-decoration: 7px underline #414ca94d;
+    text-underline-offset: 3px;
+}
+
+.subMenu nav ul li:hover a {
+    color: #414ca9;
+    text-decoration: 7px underline #414ca94d;
+    text-underline-offset: 3px;
+}
+
+/* QnA__wrap */
+#myPage__wrap {
+    width: 75%;
+    margin-bottom: 90px;
+}
+
+.myPage__inner {
+    position: relative;
+    width: 90% !important;
+}
+
+.myPage__tab {
+    border-bottom: 1px solid #000;
+    margin-bottom: 36px;
+}
+.myPage__tab__tit {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: 6px underline #668ef3;
+    text-underline-offset: 17px;
+}
+
+/* cont */
+.cont {
+    height: 165px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 30px 30px 100px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 10px #dbdbdb;
+}
+
+.cont::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #e0e0e0;
+    position: absolute;
+    left: 31px;
+    top: 60px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.cont::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #e0e0e0;
+    position: absolute;
+    left: 31px;
+    top: 93px;
+    z-index: 1;
+    border-radius: 50%;
+}
+.cont .info__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cont .info__title h3 {
+    font-size: 25px;
+    width: 60%;
+    line-height: 1.2;
+    word-break: keep-all;
+    margin-bottom: 25px;
+    height: 60px;
+}
+
+.cont .info__title h3 a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.cont .info__title h3 a:hover {
+    text-decoration: underline;
+}
+.cont .info__title .icon {
+    font-size: 18px;
+}
+
+.cont .info__title .icon a.like {
+    position: relative;
+    padding-left: 40px;
+    margin-right: 20px;
+}
+
+.cont .info__title .icon a.like::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/icon.png") no-repeat center;
+    background-position: 0px 0px;
+    position: absolute;
+    left: 0px;
+    top: -7px;
+}
+
+.cont .info__title .icon a.view {
+    position: relative;
+    padding-left: 40px;
+}
+
+.cont .info__title .icon a.view::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/icon.png") no-repeat center;
+    background-position: -60px 0px;
+    position: absolute;
+    left: 0px;
+    top: -7px;
+}
+
+.cont .info__date {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    font-size: 18px;
+    color: #666;
+}
+.myPageMyTips__btn {
+    width: 20%;
+    text-align: right;
+}
+.myPageMyTips__modify__btn {
+    margin-right: 5px;
+}
+.myPageMyTips__delete__btn,
+.myPageMyTips__modify__btn {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    color: #414ca9;
+    padding: 14px 10% 13px;
+    border-radius: 10px;
+    border: 1px solid #414ca9;
+    margin-bottom: 40px;
+    transition: all 0.2s;
+}
+.myPageMyTips__delete__btn:hover,
+.myPageMyTips__modify__btn:hover {
+    color: #fff;
+    background: #414ca9;
+}
+
+/* icon */
+.icon {
+    width: 100%;
+}
+.icon a {
+    position: relative;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.icon a::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: -3px;
+    left: -25px;
+    background-image: url(../img/QnAIcons.svg);
+}
+
+.icon .AnserNum::before {
+    background-position: -80px 0;
+}
+
+.icon .like::before {
+    background-position: 0 -40px;
+}
+
+.icon .star.active::before {
+    background-position: -40px 0;
+}
+
+.icon .like.active::before {
+    background-position: -40px -40px;
+}
+
+.icon .answer {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+@media (max-width: 770px) {
+    .subMenu {
+        width: 13%;
+    }
+    #myPage__wrap {
+        width: 75%;
+    }
+    .myPage__inner {
+        width: 95% !important;
+        padding: 0;
+        margin: 0 !important;
+    }
+    .subMenu h2 {
+        font-size: 24px;
+    }
+
+    .subMenu ul li a {
+        font-size: 20px !important;
+    }
+    .cont {
+        padding: 30px 30px 30px 50px;
+    }
+    .cont .info__date {
+        position: absolute;
+        right: 40px;
+        bottom: 30px;
+        font-size: 18px;
+        color: #666;
+    }
+
+    .cont .info__title a {
+        font-size: 20px;
+    }
+
+    .cont .info__date {
+        font-size: 15px;
+    }
+
+    .cont .info__title h3 {
+        margin-bottom: 15px;
+    }
+    .icon {
+        width: 100%;
+    }
+}
+
+@media (max-width: 468px) {
+    .subMenu h2 {
+        font-size: 18px;
+    }
+
+    .subMenu ul li a {
+        font-size: 16px !important;
+    }
+
+    .myPage {
+        padding-top: 50px;
+    }
+    /* .cont {
+        padding-right: 8px;
+        padding-left: 57px;
+    } */
+    .cont .QnA__date {
+        right: 20px;
+    }
+    .cont {
+        padding: 30px 30px;
+    }
+
+    .cont .info__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cont::before,
+    .cont::after {
+        display: none;
+    }
+
+    .cont .info__date {
+        bottom: 5px;
+    }
+
+    .cont .info__title h3 {
+        margin-bottom: 0px;
+    }
+    .icon a {
+        position: relative;
+        margin-right: 15px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,187 @@
+#category_R .main__title {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+/* category */
+#category {
+    padding: 100px 0 150px;
+}
+#category h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    word-break: keep-all;
+}
+.category__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.categoryIcon {
+    width: 18.5%;
+    height: 200px;
+    padding: 30px 0 20px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    transition: border 0.2s;
+    box-shadow: 0px 0px 5px #dbdbdb;
+}
+.categoryIcon:hover {
+    border: 4px solid #414ca9;
+}
+#category_S .categoryIcon a .icon {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: url(../img/categoryIcons.svg);
+    background-position: 0 -240px;
+    margin-bottom: 25px;
+}
+#category_S .categoryIcon a .icon.icon2 {
+    background-position: -120px -240px;
+}
+#category_S .categoryIcon a .icon.icon3 {
+    background-position: -240px -240px;
+}
+#category_S .categoryIcon a .icon.icon4 {
+    background-position: -360px -240px;
+}
+#category_S .categoryIcon a .icon.icon5 {
+    background-position: -480px -240px;
+}
+#category_S .categoryIcon a .icon.icon6 {
+    background-position: 0 -360px;
+}
+#category_S .categoryIcon a .icon.icon7 {
+    background-position: -120px -360px;
+}
+#category_S .categoryIcon a .icon.icon8 {
+    background-position: -240px -360px;
+}
+#category_S .categoryIcon a .icon.icon9 {
+    background-position: -360px -360px;
+}
+#category_S .categoryIcon a .icon.icon10 {
+    background-position: -480px -360px;
+}
+#category_S .categoryIcon a h4 {
+    text-align: center;
+    font-size: 23px;
+}
+
+/* todayBestTip */
+#todayBestTip {
+    margin-bottom: 150px;
+}
+#todayBestTip h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 22px;
+    word-break: keep-all;
+}
+#todayBestTip h3 em {
+    font-weight: 700;
+}
+#todayBestTip .list__inner {
+}
+#todayBestTip .list__inner ul {
+}
+#todayBestTip .list__inner ul li {
+    width: 100%;
+    padding: 33px 20px 32px 120px;
+    background: #fff;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 5px #dbdbdb;
+}
+#todayBestTip .list__inner ul li:hover {
+    background: #e5f0ff;
+    transform: scale(1.03);
+}
+#todayBestTip .list__inner ul li a::before {
+    content: "";
+    width: 100px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/medalIcons.svg) no-repeat;
+}
+#todayBestTip .list__inner ul li.silver a::before {
+    background-position: -130px 0;
+}
+#todayBestTip .list__inner ul li.bronze a::before {
+    background-position: -260px 0;
+}
+#todayBestTip .list__inner ul li a h4 {
+    font-size: 30px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 1220px) {
+    #category {
+        padding: 100px 20px 150px 60px;
+    }
+    .category__inner {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    .categoryIcon {
+        width: 22%;
+        margin-right: 3%;
+    }
+    .categoryIcon a h4 {
+        word-break: keep-all;
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 770px) {
+    #category {
+        padding: 100px 15px 150px 40px;
+    }
+    .category__inner {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    .categoryIcon {
+        width: 30%;
+        margin-right: 3%;
+    }
+    .categoryIcon a h4 {
+        word-break: keep-all;
+        font-size: 1.3rem;
+    }
+    #todayBestTip .list__inner ul li a h4 {
+        font-size: 22px;
+    }
+}
+@media (max-width: 500px) {
+    #category {
+        padding: 100px 10px 150px 20px;
+    }
+    .category__inner {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    .categoryIcon {
+        width: 47%;
+        margin-right: 3%;
+    }
+    .categoryIcon a h4 {
+        word-break: keep-all;
+        font-size: 1.3rem;
+    }
+    #todayBestTip .list__inner ul li a h4 {
+        font-size: 18px;
+    }
+}

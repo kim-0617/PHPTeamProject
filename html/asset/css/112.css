@@ -1,0 +1,157 @@
+#police__wrap {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+#police__wrap.show {
+    display: flex;
+}
+
+#police__box {
+    width: 450px;
+    height: 750px;
+    background-color: #fff;
+    border-radius: 50px;
+    position: relative;
+}
+
+.police__inner {
+    height: inherit;
+    padding: 30px 65px;
+}
+
+.police__inner .police__header {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 4px solid #668ef3;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+
+.police__inner .police__header>div:first-child {
+    width: 30%;
+    border: 2px solid #414ca9;
+    border-radius: 50%;
+}
+
+.police__inner .police__header>div:first-child>img {
+    object-fit: cover;
+}
+
+.police__inner .police__header h2 {
+    width: 70%;
+    margin-left: 7px;
+    font-size: 28px;
+}
+
+.police__inner .police__desc {
+    margin: 10px 0;
+    padding: 0 5px;
+    color: #666;
+    font-weight: 300;
+}
+
+.police__inner form ul li {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 20px 0px;
+    padding-left: 5px;
+}
+
+.police__inner form ul li input {
+    width: 20px;
+    height: 20px;
+}
+
+.police__inner form ul li label {
+    margin-left: 20px;
+    margin-top: 1px;
+}
+
+.police__inner form fieldset .text .textLimit {
+    text-align: right;
+    padding-right: 7px;
+    color: #888;
+    font-weight: 300;
+}
+
+.police__inner form fieldset .text .sangse {
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 10px;
+    resize: none;
+    border: 2px solid #414ca9;
+    height: 100px;
+}
+
+.police__inner form fieldset .text .sangse::placeholder {
+    color: #000;
+    /* font-size: 13px; */
+}
+
+.police__inner form fieldset .btn__box {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.police__inner form fieldset .btn__box>button {
+    width: 60%;
+    padding: 15px 0;
+}
+
+.police__inner form fieldset .btn__box>button:hover {
+    background: #fff;
+    color: #668ef3;
+    box-shadow: inset 0px 0px 10px #668ef3;
+    transition: all 0.3s ease-out;
+}
+
+.police__inner form fieldset .btn__box>a {
+    display: inline-block;
+    width: 35%;
+    padding: 15px 0;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.police__inner form fieldset .btn__box>a:hover {
+    background: #414ca9;
+    color: #fff;
+    box-shadow: inset 0px 0px 10px #fff;
+    transition: all 0.3s ease-out;
+}
+
+@media (max-width: 468px) {
+    #police__box {
+        width: 90%;
+    }
+
+    .police__inner {
+        padding: 60px 25px;
+    }
+
+    .police__inner .police__service div {
+        width: 32%;
+        font-size: 12px;
+    }
+
+    .police__inner .fs {
+        font-size: 16px !important;
+    }
+
+    .police__inner .police__service .join {
+        width: 32%;
+        font-size: 12px;
+    }
+}

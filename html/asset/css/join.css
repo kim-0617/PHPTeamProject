@@ -1,0 +1,149 @@
+.AgreeBox {
+    height: auto;
+}
+
+.AgreeBox form fieldset>div {
+    margin-bottom: 45px;
+}
+
+.AgreeBox form fieldset>div label {
+    font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.AgreeBox form fieldset>div input {
+    border-radius: 8px;
+}
+
+.AgreeBox form fieldset > .ID{
+    display: flex;
+    flex-wrap: wrap;
+}
+.AgreeBox form fieldset > .ID label {
+    width: 100%;
+}
+.AgreeBox form fieldset > .ID input {
+    width: 76%;
+    margin-right: 1%;
+}
+
+.AgreeBox form fieldset > .ID .idCheck {
+    width: 23%;
+    text-align: center;
+    height: 55px;
+    line-height: 55px;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.AgreeBox form fieldset > .ID p {
+    width: 100%;
+}
+
+
+.AgreeBox form fieldset > .address{
+    display: flex;
+    flex-wrap: wrap;
+}
+.AgreeBox form fieldset > .address label:first-child{
+    width: 100%;
+}
+.AgreeBox form fieldset > .address #youAddress1{
+    width: 76%;
+    margin-right: 1%;
+    margin-bottom: 10px;
+}
+.AgreeBox form fieldset > .address #youAddress2{
+    margin-bottom: 10px;
+}
+.AgreeBox form fieldset > .address .addressCheck{
+    width: 23%;
+    text-align: center;
+    line-height: 57px;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 55px;
+}
+
+.join__btn {
+    margin: 0 auto;
+    display: block;
+    padding: 18px 50px;
+    border-radius: 50px;
+    border-width: 3px;
+    font-size: 26px;
+    margin-top: 70px;
+    background: #fff;
+    transition: all 0.3s;
+}
+
+.join__btn:hover {
+    background-color: #414ca9;
+    color: #fff;
+}
+
+.warning {
+    color: red;
+    font-size: 15px;
+    margin-top: 10px;
+    vertical-align: bottom;
+}
+
+
+@media (max-width: 770px) {
+    .warning {
+       margin-top: 5px;
+       font-size: 13px;
+        display: block;
+    }
+    .AgreeBox form fieldset > .address .addressCheck,
+    .AgreeBox form fieldset > .ID .idCheck{
+        font-size: 15px;
+    }
+}
+@media (max-width: 468px){
+    .AgreeBox form fieldset>div label {
+        font-size: 18px;
+    }
+    .AgreeBox form fieldset > .ID{
+       display: block;
+    }
+    .AgreeBox form fieldset > .ID input {
+        width: 100%;
+    }
+    .AgreeBox form fieldset > .ID .idCheck {
+        float: right;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 5px;
+    }
+    .join__btn {
+        padding: 10px 40px;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    
+    .AgreeBox form fieldset > .address{
+        display: block;
+    }
+    .AgreeBox form fieldset > .address label:first-child{
+        width: 100%;
+    }
+    .AgreeBox form fieldset > .address #youAddress1{
+        width: 100%;
+    }
+    .AgreeBox form fieldset > .address #youAddress2{
+        margin-bottom: 10px;
+    }
+    .AgreeBox form fieldset > .address .addressCheck{
+        float: right;
+        height: 30px;
+        line-height: 30px;
+        margin-top: -5px;
+        margin-bottom: 5px;
+    }
+}
+

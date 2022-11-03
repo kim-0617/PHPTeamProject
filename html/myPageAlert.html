@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/myPageAlert.css">
+</head>
+
+<body>
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header" class="show">
+        <div class="header__inner">
+            <div class="left">
+                <a href="main.html"><span class="blind">메인페이지 이동</span></a>
+            </div>
+            <div class="middle">
+                <ul>
+                    <li><a href="Today_QnA.html">오늘의 이슈</a></li>
+                    <li><a href="Tip_QnAr.html">꿀팁 저장소</a></li>
+                    <li><a href="QnA_page.html">QnA</a></li>
+                    <li><a href="Notice.html">공지사항</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#"><span class="blind">알림</span></a></li>
+                    <li><a href="board_write.html"><span class="blind">글쓰기</span></a></li>
+                    <li><a class="btn3" href="LogQnArm.html">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <div class="header__none" aria-hidden="true">
+        <div class="header__inner">
+            <div class="left">
+                <a href="main.html"><span class="blind">메인페이지 이동</span></a>
+            </div>
+            <div class="middle">
+                <ul>
+                    <li><a href="Today_issue.html">오늘의 이슈</a></li>
+                    <li><a href="Tip_infor.html">꿀팁 저장소</a></li>
+                    <li><a href="QnA_page.html">QnA</a></li>
+                    <li><a href="Notice.html">공지사항</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#"><span class="blind">알림</span></a></li>
+                    <li><a href="board_write.html"><span class="blind">글쓰기</span></a></li>
+                    <li><a class="btn3" href="LoginForm.html">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //header none -->
+
+    <main id="main" class="myPage">
+        <div class="subMenu">
+            <h2>마이페이지</h2>
+            <hr>
+            <nav>
+                <ul>
+                    <li class="active"><a href="myPageAlert.html">알림</a></li>
+                    <li><a href="myPageQuestion.html">내 질문</a></li>
+                    <li><a href="myPageMyTips.html">내가 쓴 글</a></li>
+                    <hr>
+                    <li><a href="myPagePrivacy.html" target="_blank">개인정보</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section id="myPage__wrap">
+            <div class="myPage__inner container">
+                <div class="myPage__tab">
+                    <h3 class="myPage__tab__tit">알림 모아보기</h3>
+                </div>
+                
+                <article class="myPageAlert">
+                    <h4 class="myPageAlert__title"><a href="#">새로운 댓글이 달렸어요!</a></h4>
+                    <div class="myPageAlert__date">2019-02-04</div>
+                    <a class="myPageAlert__delete__btn" href="#">삭제하기</a>
+                </article>
+                <!-- //myPageAlert1 -->
+                
+                <article class="myPageAlert">
+                    <h4 class="myPageAlert__title"><a href="#">잡스비 님의 답변이 채택되었어요!</a></h4>
+                    <div class="myPageAlert__date">2019-02-04</div>
+                    <a class="myPageAlert__delete__btn" href="#">삭제하기</a>
+                </article>
+                <!-- //myPageAlert2 -->
+
+                <article class="myPageAlert">
+                    <h4 class="myPageAlert__title"><a href="#">새로운 댓글이 달렸어요!</a></h4>
+                    <div class="myPageAlert__date">2019-02-04</div>
+                    <a class="myPageAlert__delete__btn" href="#">삭제하기</a>
+                </article>
+                <!-- //myPageAlert3 -->
+
+                <article class="myPageAlert">
+                    <h4 class="myPageAlert__title"><a href="#">새로운 댓글이 달렸어요!</a></h4>
+                    <div class="myPageAlert__date">2019-02-04</div>
+                    <a class="myPageAlert__delete__btn" href="#">삭제하기</a>
+                </article>
+                <!-- //myPageAlert4 -->
+            </div>
+        </section>
+        <!-- //QnA -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <div class="container">
+            <a href="#" class="footerLogo"></a>
+            <div class="footer__desc">
+                <ul>
+                    <li><a href="#">잡스비네이터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">자주 묻는 질문(FAQ)</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+                <p class="footer__info">
+                    대표 이메일 : jobsbee@gmail.com  |  대표자명 : 잡스비  | 개인정보보호책임 : 잡스비<br>
+                    ⓒ 2022 JOBSBEE. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+</body>
+
+</html>

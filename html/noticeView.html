@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 글보기</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/noticeView.css">
+</head>
+<body>
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="main.html"><span class="blind">메인페이지 이동</span></a>
+            </div>
+            <div class="middle">
+                <ul>
+                    <li><a href="Today_issue.html">오늘의 이슈</a></li>
+                    <li><a href="Tip_infor.html">꿀팁 저장소</a></li>
+                    <li><a href="QnA_page.html">QnA</a></li>
+                    <li><a href="Notice.html">공지사항</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#"><span class="blind">알림</span></a></li>
+                    <li><a href="board_write.html"><span class="blind">글쓰기</span></a></li>
+                    <li><a class="btn3" href="LoginForm.html">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="banner">
+            <div class="banner__inner">
+                <figure>
+                    <img src="./asset/img/bannerBee.png" alt="마스코트">
+                </figure>
+                <div class="banner__desc">
+                    <span class="sub__title">notice</span>
+                    <h2 class="main__title">공지사항</h2>
+                    <p class="banner__info">
+                        잡스비에서 알려드립니다.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+        <!-- //banner -->
+
+        <section id="notice" class="container">
+            <div class="notice_inner">
+                <h2>공지사항</h2>
+                
+                <div class="notice_table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="noticeViewTit"><h3>[공지] 잡스비 질문자 패널티 정책</h3></td>
+                            </tr>
+                            <tr>
+                                <td class="noticeViewTime">2019-02-04 18:21</td>
+                            </tr>
+                            <tr>
+                                <td class="noticeViewCont">
+                                        <p>
+                                            1. 에어팟 위치추적 하기
+                                            <br>
+                                            에어팟은 완전한 무선으로, 걸어둘 선조차 없을 뿐만 아니라 
+        크기도 작아 분실 위험이 적지 않습니다. <br>
+        때문에 많은 사람들이 에어팟 마지막 위치를 찾아 소마 쿠션을 이리저리 뒤지는 일이 많은데, <br>
+        에어팟 위치추적 앱을 사용하면 이런 걱정도 끝!!<br>
+        애플은 나의 아이폰 찾기 앱 안에 나의 에어팟 찾기를 넣어 에어팟을 페어링하면, 나의 아이폰 찾기 앱이 자동으로 에어팟의 위치를 추적하도록 기능을 마련해 두고 있습니다. 에어팟 위치추적은 에어팟 마지막 위치를 찾아주는게 주목적으로, 최신 기기 사용에 어려움을 겪는 이들도 손쉽게 따라 할 수 있습니다.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="noticeViewBtn">
+                        <a href="#" class="btn3">수정하기</a>
+                        <a href="#" class="btn3" onClick="alert('정말 삭제하시겠습니까?')">삭제하기</a>
+                        <a href="#" class="btn3">목록보기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //board -->
+
+
+    </main>
+    
+
+
+</body>
+</html>

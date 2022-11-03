@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>오늘의 이슈</title>
+        <link rel="stylesheet" href="./asset/css/todayIssue.css" />
+        <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <main id="main">
+            <section id="todayIssue">
+                <span>TODAY'S ISSUE</span>
+                <h2>오늘의 <em>이슈</em> 모아보기</h2>
+
+                <div class="slider__img">
+                    <div class="slider__inner">
+                        <div class="slider">
+                            <div class="rank01"></div>
+                            <img src="./asset/img/slider01.jpg" alt="01" />
+                            <div class="text">
+                                <span class="cate"> 취미 > 등산 </span>
+                                <p class="title">네 발로 등산하는 꿀팁</p>
+                                <p class="desc">
+                                    사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁
+                                </p>
+                            </div>
+                        </div>
+                        <!-- // 01 -->
+
+                        <div class="slider">
+                            <div class="rank02"></div>
+                            <img src="./asset/img/slider02.jpg" alt="02" />
+                            <div class="text">
+                                <span class="cate"> 취미 > 등산 </span>
+                                <p class="title">네 발로 등산하는 꿀팁</p>
+                                <p class="desc">
+                                    사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁
+                                </p>
+                            </div>
+                        </div>
+                        <!-- // 02 -->
+
+                        <div class="slider">
+                            <div class="rank03"></div>
+                            <img src="./asset/img/slider03.jpg" alt="03" />
+                            <div class="text">
+                                <span class="cate"> 취미 > 등산 </span>
+                                <p class="title">네 발로 등산하는 꿀팁</p>
+                                <p class="desc">
+                                    사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁
+                                </p>
+                            </div>
+                        </div>
+                        <!-- // 03 -->
+
+                        <div class="slider">
+                            <div class="rank04"></div>
+                            <img src="./asset/img/slider04.jpg" alt="04" />
+                            <div class="text">
+                                <span class="cate"> 취미 > 등산 </span>
+                                <p class="title">네 발로 등산하는 꿀팁</p>
+                                <p class="desc">
+                                    사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁
+                                </p>
+                            </div>
+                        </div>
+                        <!-- // 04 -->
+
+                        <div class="slider">
+                            <div class="rank05"></div>
+                            <img src="./asset/img/slider05.jpg" alt="05" />
+                            <div class="text">
+                                <span class="cate"> 취미 > 등산 </span>
+                                <p class="title">네 발로 등산하는 꿀팁</p>
+                                <p class="desc">
+                                    사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁 사족보행으로 걷는 꿀팁
+                                </p>
+                            </div>
+                        </div>
+                        <!-- // 05 -->
+                    </div>
+                </div>
+                <!-- // 슬라이더 영역 -->
+
+                <div class="slider__btn">
+                    <button class="prev"></button>
+                    <button class="next"></button>
+                </div>
+                <!-- // 버튼 -->
+            </section>
+        </main>
+        <!-- //main -->
+
+        <script>
+            const sliderInner = document.querySelector(".slider__inner");
+            const sliderBtn = document.querySelector(".slider__btn");
+            let slider = document.querySelectorAll(".slider");
+            let sliderLength = slider.length;
+            const nextBtn = document.querySelector(".next");
+            const prevBtn = document.querySelector(".prev");
+            const sliderWidth = slider[0].offsetWidth + 40;
+            let sliderFirst = slider[0];
+            let sliderSecond = slider[1];
+            let sliderLast = slider[sliderLength - 1];
+            let sliderLast2 = slider[sliderLength - 2];
+            let cloneFirst = sliderFirst.cloneNode(true);
+            let cloneSecond = sliderSecond.cloneNode(true);
+            let cloneLast = sliderLast.cloneNode(true);
+            let cloneLast2 = sliderLast2.cloneNode(true);
+
+            sliderInner.appendChild(cloneFirst);
+            sliderInner.appendChild(cloneSecond);
+            sliderInner.insertBefore(cloneLast, sliderFirst);
+
+            slider = document.querySelectorAll(".slider");
+            sliderInner.insertBefore(cloneLast2, slider[0]);
+
+            let currentIndex = 0;
+            slider[currentIndex + 1].classList.add("on");
+            slider[currentIndex + 2].classList.add("on");
+
+            // 순간이동
+            function gotoSlider(direction) {
+                document.querySelectorAll(".slider").forEach((s) => {
+                    s.classList.remove("on");
+                });
+
+                sliderInner.classList.add("transition");
+                sliderBtn.classList.add("disable");
+                posInitial = sliderInner.offsetLeft;
+
+                if (direction === -1) {
+                    sliderInner.style.left = posInitial + sliderWidth + "px";
+                    currentIndex--;
+                } else if (direction === 1) {
+                    sliderInner.style.left = posInitial - sliderWidth + "px";
+                    currentIndex++;
+                }
+                slider[currentIndex + 1].classList.add("on");
+                slider[currentIndex + 2].classList.add("on");
+            }
+
+            // 순간이동
+            function checkIndex() {
+                sliderInner.classList.remove("transition");
+
+                // 마지막 이미지
+                if (currentIndex === sliderLength) {
+                    sliderInner.style.left = `${-(1 * sliderWidth + 60)}px`;
+                    currentIndex = 0;
+                    document.querySelector(".rank01").parentElement.classList.add("on");
+                    document.querySelector(".rank02").parentElement.classList.add("on");
+                }
+                // 처음 이미지
+                else if (currentIndex === -1) {
+                    sliderInner.style.left = `${-(sliderLength * sliderWidth)}px`;
+                    currentIndex = sliderLength - 1;
+                    document.querySelectorAll(".rank01")[1].parentElement.classList.add("on");
+                    document.querySelectorAll(".rank05")[1].parentElement.classList.add("on");
+                }
+            }
+
+            sliderInner.addEventListener("transitionend", checkIndex);
+
+            prevBtn.addEventListener("click", () => {
+                gotoSlider(-1);
+                setTimeout(() => {
+                    sliderBtn.classList.remove("disable");
+                }, 300);
+            });
+
+            nextBtn.addEventListener("click", () => {
+                gotoSlider(1);
+                setTimeout(() => {
+                    sliderBtn.classList.remove("disable");
+                }, 300);
+            });
+        </script>
+    </body>
+</html>

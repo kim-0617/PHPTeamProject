@@ -1,0 +1,30 @@
+.SearchIDEmail.login__inner form fieldset div:nth-child(3) {
+    margin-bottom: 60px;
+}
+
+.SearchIDEmail.login__inner .login__find {
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.SearchIDEmail.login__inner .login__find .phoneFind {
+    width: 48%;
+    margin-right: 4%;
+    padding: 9px 15px;
+    font-size: 16px;
+}
+
+.SearchIDEmail.login__inner .login__find .pwFind {
+    width: 48%;
+    padding: 18px 15px 20px 15px;
+    font-size: 21px;
+}
+
+@media (max-width:468px) {
+    .SearchIDEmail.login__inner .login__find .phoneFind {
+        padding: 10px 15px;
+    }
+}
